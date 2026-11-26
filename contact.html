@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naptune Land Development Ltd.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <!-- Layer 1: Top Utility Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="contact-info">
+          <span>📞 Hotline: +XX0 XXXXXXXXXXX</span>
+          <span class="divider">|</span>
+          <span>✉️ info@naptuneland.com</span>
+        </div>
+        <div class="office-hours">
+          <span>🕒 Sat - Thu: 10:00 AM - 7:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Layer 2: Main Navigation Bar -->
+    <nav class="main-nav">
+      <div class="container nav-content">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-logo">
+          <span class="logo-title">NAPTUNE</span>
+          <span class="logo-subtitle">Land Development </span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+
+          <!-- Dropdown Item -->
+          <li class="dropdown">
+            <a href="#projects" class="nav-link dropdown-toggle" id="projects-toggle">
+              Projects <span class="arrow">▾</span>
+            </a>
+            <ul class="dropdown-menu" id="projects-menu">
+              <li><a href="residential.html" class="dropdown-link">Residential Plots</a></li>
+              <li><a href="commercial.html" class="dropdown-link">Commercial Spaces</a></li>
+              <li><a href="ongoing.html" class="dropdown-link">Ongoing Projects</a></li>
+              <li><a href="completed.html" class="dropdown-link">Completed Projects</a></li>
+            </ul>
+          </li>
+
+    <li><a href="landowners.html" class="nav-link">Landowners</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+		     <li><a href="contact.html" class="nav-btn">Book a Site Visit</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Residential Plots Section -->
+ <!-- ==========================================
+     CONTACT SECTION 1: OFFICE INFO & INQUIRY FORM
+=========================================== -->
+<section class="contact-main-section" id="contact">
+  <div class="cnt-container">
+
+    <!-- Section Header -->
+    <div class="cnt-header">
+      <span class="cnt-tag">GET IN TOUCH</span>
+      <h2 class="cnt-title">Book a Free Site Visit or Consult With Us</h2>
+      <p class="cnt-subtitle">
+        Have questions about plot pricing, installment plans, or landowner joint ventures? Reach out to our dedicated advisory team today.
+      </p>
+    </div>
+
+    <!-- Split Grid: Left Info + Right Form -->
+    <div class="cnt-split-grid">
+
+      <!-- Left Column: Corporate Contact Cards -->
+      <div class="cnt-info-column">
+        <div class="cnt-info-card">
+          <div class="cnt-icon-box">🏢</div>
+          <div>
+            <h4>Corporate Head Office</h4>
+            <p>Level-7, Naptune Tower, Progoti Sarani,<br>Badda-Gulshan Link Road, Dhaka-1212</p>
+          </div>
+        </div>
+
+        <div class="cnt-info-card">
+          <div class="cnt-icon-box">📞</div>
+          <div>
+            <h4>Hotline & Sales Desk</h4>
+            <p>+880 1700-000000 (Sales & Booking)<br>+880 1800-000000 (Landowner JV Desk)</p>
+          </div>
+        </div>
+
+        <div class="cnt-info-card">
+          <div class="cnt-icon-box">✉️</div>
+          <div>
+            <h4>Official Email</h4>
+            <p>info@naptuneland.com<br>sales@naptuneland.com</p>
+          </div>
+        </div>
+
+        <div class="cnt-info-card cnt-hours-highlight">
+          <div class="cnt-icon-box">🕒</div>
+          <div>
+            <h4>Visiting & Office Hours</h4>
+            <p>Saturday – Thursday: 10:00 AM – 7:00 PM<br><strong>Friday:</strong> Project Site Visits Only (By Appointment)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Inquiry & Site Visit Form -->
+      <div class="cnt-form-wrapper">
+        <h3 class="cnt-form-heading">Send Us a Message</h3>
+        <form action="#" method="POST" class="cnt-form">
+          
+          <div class="cnt-form-row">
+            <div class="cnt-input-group">
+              <label for="full-name">Full Name *</label>
+              <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+            </div>
+            <div class="cnt-input-group">
+              <label for="phone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+880 1XXX-XXXXXX" required>
+            </div>
+          </div>
+
+          <div class="cnt-form-row">
+            <div class="cnt-input-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com">
+            </div>
+            <div class="cnt-input-group">
+              <label for="interest">Inquiry Purpose *</label>
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="residential">Buy Residential Plot</option>
+                <option value="commercial">Buy Commercial Space / Plot</option>
+                <option value="site-visit">Book a Free Friday Site Visit</option>
+                <option value="landowner">Landowner Joint Venture (JV)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cnt-input-group">
+            <label for="project">Preferred Project Location</label>
+            <select id="project" name="project">
+              <option value="any" selected>All / Any Project</option>
+              <option value="purbachal">Purbachal 300ft Adjacent Projects</option>
+              <option value="bashundhara">Bashundhara R/A Extension Projects</option>
+              <option value="mawa">Dhaka-Mawa Expressway Projects</option>
+              <option value="tejgaon">Tejgaon / Badda Commercial Hubs</option>
+            </select>
+          </div>
+
+          <div class="cnt-input-group">
+            <label for="message">Your Message / Preferred Plot Size</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your preferred Katha/SFT size or any specific query..."></textarea>
+          </div>
+
+          <button type="submit" class="cnt-submit-btn">Submit Inquiry & Request Callback</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     CONTACT SECTION 2: SITE OFFICES & GOOGLE MAP
+=========================================== -->
+<section class="contact-map-section" id="office-locations">
+  <div class="cnt-container">
+
+    <!-- Section Header -->
+    <div class="cnt-header">
+      <span class="cnt-tag">OUR PRESENCE</span>
+      <h2 class="cnt-title">Project Site Offices & Location Map</h2>
+      <p class="cnt-subtitle">
+        Visit our corporate headquarters in Dhaka or drop by our on-site project offices for a guided tour.
+      </p>
+    </div>
+
+    <!-- 3 Site Office Cards -->
+    <div class="cnt-branches-grid">
+      <div class="cnt-branch-card">
+        <span class="cnt-branch-badge">Site Office 01</span>
+        <h4>Purbachal Zone Office</h4>
+        <p>Sector-18 Link Road, Kanchan Bridge Adjacent, Purbachal, Rupganj.</p>
+        <span class="cnt-branch-phone">📞 +880 1711-111111</span>
+      </div>
+
+      <div class="cnt-branch-card">
+        <span class="cnt-branch-badge">Site Office 02</span>
+        <h4>Bashundhara Extension Office</h4>
+        <p>Block-N Extension, 100ft Madani Avenue, Vatara, Dhaka-1212.</p>
+        <span class="cnt-branch-phone">📞 +880 1722-222222</span>
+      </div>
+
+      <div class="cnt-branch-card">
+        <span class="cnt-branch-badge">Site Office 03</span>
+        <h4>Mawa Expressway Site Office</h4>
+        <p>Jhilmil Residential Area Gate-2, Dhaka-Mawa Highway, Keraniganj.</p>
+        <span class="cnt-branch-phone">📞 +880 1733-333333</span>
+      </div>
+    </div>
+
+    <!-- Responsive Google Map Frame -->
+    <div class="cnt-map-box">
+      <iframe
+        title="Naptune Land Development Ltd. Dhaka Location"
+        src="https://google.com"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- Corporate Footer Section -->
+<footer class="site-footer">
+  <div class="ftr-container">
+
+    <!-- Main 4-Column Footer Grid -->
+    <div class="ftr-grid">
+
+      
+      <div class="ftr-col ftr-brand-col">
+        <a href="#home" class="ftr-logo">
+          <span class="ftr-logo-title">NAPTUNE</span>
+          <span class="ftr-logo-sub">Land Development Ltd.</span>
+        </a>
+        <p class="ftr-about-text">
+          Building planned, flood-free, and legally transparent residential townships and commercial landmarks across Dhaka’s prime growth corridors.
+        </p>
+
+        <!-- Real Estate Membership Badges -->
+        <div class="ftr-badges">
+          <span class="ftr-cert-badge">✓ REHAB Member</span>
+          <span class="ftr-cert-badge">✓ RAJUK Enlisted</span>
+        </div>
+
+        <!-- Social Links -->
+        <div class="ftr-socials">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Navigation -->
+      <div class="ftr-col">
+        <h4 class="ftr-heading">Quick Links</h4>
+        <ul class="ftr-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#board-of-directors">Board of Directors</a></li>
+          <li><a href="#landowners-leadership">Landowners JV</a></li>
+          <li><a href="#contact">Book a Site Visit</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Project Categories -->
+      <div class="ftr-col">
+        <h4 class="ftr-heading">Our Projects</h4>
+        <ul class="ftr-links">
+          <li><a href="#residential">Residential Plots</a></li>
+          <li><a href="#commercial">Commercial Spaces</a></li>
+          <li><a href="#ongoing">Ongoing Projects</a></li>
+          <li><a href="#completed">Completed Projects</a></li>
+          <li><a href="#office-locations">Site Office Locations</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Corporate Office & Hotline -->
+      <div class="ftr-col">
+        <h4 class="ftr-heading">Corporate Office</h4>
+        <ul class="ftr-contact-list">
+          <li>
+            <span class="ftr-c-icon">📍</span>
+            <span>Level-7, Naptune Tower, Progoti Sarani, Badda-Gulshan Link Road, Dhaka-1212</span>
+          </li>
+          <li>
+            <span class="ftr-c-icon">📞</span>
+            <span>+XX0 XXXXXXXXXX00-000000<br>+X00 1XXXXXXXXXXX</span>
+          </li>
+          <li>
+            <span class="ftr-c-icon">✉️</span>
+            <span>info@naptuneland.com</span>
+          </li>
+          <li>
+            <span class="ftr-c-icon">🕒</span>
+            <span>Sat – Thu: 10:00 AM – 7:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Copyright Bar -->
+  <div class="ftr-bottom-bar">
+    <div class="ftr-container ftr-bottom-content">
+      <p>&copy; 2026 <strong>Naptune Land Development</strong> All Rights Reserved.</p>
+      <div class="ftr-legal-links">
+        <a href="#privacy">Privacy Policy</a>
+        <span>|</span>
+        <a href="#terms">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+    <!-- ====================================Home page design==========================-->
+	
+	 <!-- ====================================Home page design==========================-->
+
+ <!-- ====================================Home page design==========================-->
+
+ <!-- ====================================Home page design==========================-->
+
+ <!-- ====================================Home page design==========================-->
+
+ <!-- ====================================Home page design==========================-->
+
+
+
+
+
